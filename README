@@ -1,0 +1,25 @@
+Coding convention 
+
+Variables name                          -                   underscore style (e.g. int obj_counter)
+Function name                           -                   Start with _ if not an API function (e.g. _get_obj_counter(), read())
+tabs                                    -                   4 spaces
+Function comments                       -                   Comments above every major function
+
+e.g:
+/*
+ * dci_create_container
+ * It first finds the matching node of provided cloud plugin, then creates a 
+ * container of given name.
+ *
+ * Input:
+ * int - pointer holding address of cloud plugin.
+ * char * - pointer holding container name.
+ *
+ * Output:
+ * int - 0 on success, non-zero on failure.
+ */
+dci_error_t dci_create_container(int dcid, char *cid);
+    
+Todo                                    -                   Write /*FIXME*/ in front of everything that needs to be fixed or is a todo
+Distinguish between data manipulation and algorithm
+
